@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Products</title>
+        <style>
+            nav {
+                position: absolute;
+                left: 0;
+                width: 100%;
+                border: 0px;
+                box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+                display: block;
+                margin: auto;
+                overflow: hidden;
+                background-color: rgba(171, 73, 153, 1);
+                /*
+                setting transparency of background
+                */
+            }
+            nav ul{
+                margin: 0;
+                padding: 0;
+            }
+            nav ul li{
+                display: inline-block;
+                list-style-type: none;
+                    -webkit-transition: all 0.2s;
+                    -moz-transition: all 0.2s;
+                    -ms-transition: all 0.2s;
+                    -o-transition: all 0.2s;
+                    transition: all 0.2s;
+            }
+            nav > ul > li > a > .caret {
+        border-top: 4px solid #aaa;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+        content: "";
+        display: inline-block;
+        height: 0;
+        width: 0;
+        vertical-align: middle;
+  
+        -webkit-transition: color 0.1s linear;
+     	  -moz-transition: color 0.1s linear;
+       	-o-transition: color 0.1s linear;
+          transition: color 0.1s linear; 
+      }
+
+      nav > ul > li > a {
+        color: aliceblue;
+        display: block;
+        line-height: 56px;
+        padding: 0 24px;
+        text-decoration: none;
+        font-family: "Georgia", Monaco, monospace;
+      }
+
+        nav > ul > li:hover {
+          background-color: rgb( 40, 44, 47 );
+        }
+
+        nav > ul > li:hover > a {
+          color: rgb( 255, 255, 255 );
+        }
+
+        nav > ul > li:hover > a > .caret {
+          border-top-color: rgb( 255, 255, 255 );
+        }
+      
+      nav > ul > li > div {
+        background-color: rgb( 40, 44, 47 );
+        border-top: 0;
+        border-radius: 0 0 4px 4px;
+        box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+        display: none;
+        margin: 0;
+        opacity: 0;
+        position: absolute;
+        width: 165px;
+	visibility: hidden;
+	z-index: 100;
+  
+        -webkit-transiton: opacity 0.2s;
+        -moz-transition: opacity 0.2s;
+        -ms-transition: opacity 0.2s;
+        -o-transition: opacity 0.2s;
+        -transition: opacity 0.2s;
+      }
+
+        nav > ul > li:hover > div {
+          display: block;
+          opacity: 1;
+          visibility: visible;
+        }
+
+          nav > ul > li > div ul > li {
+            display: block;
+          }
+
+            nav > ul > li > div ul > li > a {
+              color: #fff;
+              display: block;
+              padding: 12px 24px;
+              text-decoration: none;
+            }
+
+              nav > ul > li > div ul > li:hover > a {
+                background-color: rgba( 200, 200, 200, 0.1);
+              }
+            html {
+                  background: -webkit-linear-gradient(310deg, white, green);
+                  -webkit-background-size: cover;
+                  -moz-background-size: cover;
+                  -o-background-size: cover;
+                  background-size: cover;
+                  background-attachment: fixed;
+              }
+              h1 {
+                  margin-top: 5%;
+                  margin-left: 0%;
+                  font-family: "Copperplate", Andale Mono, Arial;
+                  font-size: 300%;
+              }  
+              p1 {
+                  font-family: "Georgia", Monaco, monospace;
+                  font-size: 120%;
+              }
+              h2 {
+                  font-family: "Copperplate", Andale Mono, Arial;
+                  font-size: 100%;
+                  margin-left: 0%;
+                  float: left;
+              }
+              p2 {
+                  font-family: "Papyrus", Andale Mono, Arial;
+                  margin-left: 0%;
+                  margin-top: 0%;
+                  float: left;
+              }
+              h3 {
+                  font-family: "Copperplate", Andale Mono, Arial;
+                  font-size: 100%;
+                  margin-left: 40%;
+                  float: right;
+              }
+              p3 {
+                  font-family: "Papyrus", Andale Mono, Arial;
+                  margin-left: 0%;
+                  margin-top: 0%;
+                  float: right;
+              }
+            footer {
+                font-family:"Georgia", Monaco, monospace;
+                font-size: 40%;
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                border: 0px;
+                margin-left: 0%;
+                height: 15%;
+                box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+                display: block;
+                overflow: hidden;
+                background-color: rgba(171, 73, 153, 1);
+              }
+        </style>
+    <script type="text/javascript" src="https://gc.kis.scr.kaspersky-labs.com/1B74BD89-2A22-4B93-B451-1C9E1052A0EC/main.js" charset="UTF-8"></script></head>
+    <body>
+        <nav>
+        <ul>
+            <li>
+                <a href="index.html"> Home </a>
+            </li>
+            <li>
+                <a href="about.html"> About Us</a>
+            </li>
+            <li>
+                <a href="products.html"> Products</a>
+            </li>
+            <li>
+                <a href="contact.html"> Contact</a>
+            </li>
+            <li>
+                <a href="EmployeeLogin.html"> Employee Login</a>
+            </li>
+			<li>
+                <a href="http://cortex.sensutec.com"> Cortex_Beta</a>
+            </li>
+        </ul>
+    </nav>
+        <article>
+           Products 
+        </article>
+        <section1>
+            <h1>Products</h1>
+			<u>Sensutec licenses Language Processing Softwares and consults in Semantic Data Mining</u>
+        </section1>
+		<br>
+		<br><br>
+		<b>Cortex</b>
+		<br>
+		<br>
+		<p style="white-space:pre">Phases:
+		1. Baseline Definition
+		2. Synonymization
+		3. Decomposition
+		4. Classification
+		5. Standardization</p>
+		<br>
+		<p>When we tackle the task of structuring language data, we focus on the balance between intelligently designed selective attention and autonomous machine learning. 
+		We ask of our clients: What do you want to extract from your text sources (news articles, research papers, blogs, legal documents, poetry, ...)? The benefit 
+		of Cortex's Semantic Data Mining over Syntactic Data Mining, another software approach, is that Semantic (meaning) classifications pervade in multiple domains - this 
+		means that the ambiguity of blogs, the plain english of legal documents, and the complexity of scientific articles do not limit Cortex's ability to derive meaning.</p>
+		<br>
+		<p>Cortex produces the results that you need in a standardized format so that you can move the data between the various ERP, E-Commerce, and Business Intelligence 
+		softwares that you use already.</p>
+		<br>
+		<br>
+		<img src="images/cortex_diagram.jpg">
+		<br>
+		<br>
+		<br>
+		<b>Knowledge Engine</b>
+		<br>
+		<br>
+		<p>With the dawn of the information age, so also came a mass contentment with search engines returning back "remembered" data. Bloom's Taxonomy classifies 
+		this data in the lowest order. Sensutec establishes knowledge engines that return to users both "remembered" data as well as a thick associative web of metadata 
+		that helps to fuel organic creativity.</p>
+		<br>
+		<br>
+		<p>Concept Match</p>
+		<br>
+		<p>Concept Matching allows the user to highlight as large of a section of text that they want and find the percentage of similarity between the concepts 
+		of interest and other articles in the web. For a more refined synthesis (presumably during research & development), the user may select a range of articles 
+		to Concept Match within. This cuts down reading time by hours and does not compromise meaning.</p>
+		<br>
+		<p>IMPORTANT: To summarize is to truly understand the Intent of the writer. We challenge any "Summary Engine" company to summarize Shakespearean poetry and hold their 
+		head up in the midst of scholars.
+		<br>
+		<br>
+		<img src="images/cortex_2.jpg">
+		<br>
+		<br>
+		<br>
+		<img src="images/cortex_4.jpg">
+		<br>
+		<br>
+		<br>
+		<img src="images/cortex_5.jpg">
+		<br>
+		<br>
+		<br>
+		<br>
+		<p>Multi-Dimensional Semantics</p>
+		<br>
+		<p>We use algorithms to model the movement of thought and the movement of events through meaning space. This allows our clients to make predictions about 
+		how writers might write (blogs) and about how events might pass (news). This is the meat and potatoes of our decision making algorithms.</p>
+		<br>
+		<br>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+    </body>
+</html>
