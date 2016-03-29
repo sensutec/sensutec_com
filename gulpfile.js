@@ -5,18 +5,13 @@ var replace = require('gulp-replace');
 var debug = require('gulp-debug');
 var sass = require('gulp-sass');
 var watch = require('gulp-watch');
+var browserSync = require('browser-sync').create();
 
 var ENV = process.env.NODE_ENV;
 
-gulp.task('index', function() {
-    gulp.src('src/templates/index.html')
-        .pipe(include())
-        .pipe(gulp.dest('.'));
-})
-
 function build() {
-    console.log('building');
-    gulp.src(['!src/templates/index.html', 'src/templates/*.html'])
+    
+    gulp.src(['src/templates/*.html'])
         .pipe(include())
         .pipe(replace(/public\/([a-z1-9\-\_]*)\.html/gi, '$1.html'))
         .pipe(gulp.dest('public'));
@@ -32,16 +27,22 @@ gulp.task('styles', function() {
     gulp.src('src/scss/main.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('public'))
+        .pipe(browserSync.stream());
 });
 
 gulp.task('build', build);
 
-gulp.task('watch', function() {
-    gulp.watch(['src/**/*.js', 'src/**/*.html', 'src/**/*.scss'], ['del', 'styles', 'index', 'build'])
+gulp.task('serve', function() {
+    browserSync.init({
+        server: './public'
+    });
+    
+    gulp.watch(['src/**/*.js', 'src/**/*.html', 'src/**/*.scss'], ['del', 'styles', 'build']);
+    gulp.watch(['src/**/*.js', 'src/**/*.html']).on('change', browserSync.reload);
 })
 
 //NODE_ENV=development
-gulp.task('development', ['watch']);
+gulp.task('development', ['serve']);
 
 //NODE_ENV=production
 gulp.task('production', ['del', 'styles', 'build']);
