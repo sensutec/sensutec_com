@@ -20,7 +20,7 @@ npm install
 
 ## Run Development Environment
 
-Compile source files (`src/`) and run server at `localhost:8080`
+Compile source files (`src/`) and run server at `localhost:3000`
 ```
 npm run dev
 ```
