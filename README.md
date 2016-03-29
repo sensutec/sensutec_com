@@ -3,7 +3,7 @@
 ## Set Up Development Environment
 Make sure you have [Node](https://nodejs.org/en/download/) installed globally.
 
-Clone the repository (creates folder sensutec_com)
+Clone the repository (creates folder `sensutec_com`)
 ```
 https://github.com/sensutec/sensutec_com.git
 ```
