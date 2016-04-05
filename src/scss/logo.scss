@@ -5,6 +5,7 @@
 
 .logo__svg {
     padding-left: 10px;
+    font-family: $header;
     
     @media (max-width: $mobile) {
         padding: 0;
