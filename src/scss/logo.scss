@@ -1,0 +1,24 @@
+.logo {
+    margin: 0 auto;
+    max-width: 550px;
+}
+
+.logo__svg {
+    padding-left: 10px;
+    
+    @media (max-width: $mobile) {
+        padding: 0;
+    }
+}
+
+.logo__text {
+    margin-top: -10px;
+    font-size: 23px;
+    color: $dark;
+    text-align: center;
+    
+    @media (max-width: $mobile) {
+        font-size: 13px;
+        font-weight: 500;
+    }
+}
