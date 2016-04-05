@@ -1,5 +1,33 @@
 .nav {
-    background-color: $bg;
-    padding: 20px;
+    margin: 0 auto;
+    max-width: 550px;
+    padding: 30px 50px;
     color: $dark;
+    text-align: center;
+    
+    @media (max-width: $mobile) {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.nav__item {
+    display: inline-block;
+    margin-right: 30px;
+    padding: 10px;
+    border-radius: 8px;
+    
+    &.active {
+        background-color: $primary;
+    }
+}
+
+.nav__link {
+    color: $primary;
+    font-weight: 600;
+    text-decoration: none;
+    
+    &.active {
+        color: #fff;
+    }
 }

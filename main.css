@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Khand:500);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+.logo {
+  margin: 0 auto;
+  max-width: 550px; }
+
+.logo__svg {
+  padding-left: 10px; }
+  @media (max-width: 600px) {
+    .logo__svg {
+      padding: 0; } }
+
+.logo__text {
+  margin-top: -10px;
+  font-size: 23px;
+  color: #505B75;
+  text-align: center; }
+  @media (max-width: 600px) {
+    .logo__text {
+      font-size: 13px;
+      font-weight: 500; } }
+
+.nav {
+  margin: 0 auto;
+  max-width: 550px;
+  padding: 30px 50px;
+  color: #505B75;
+  text-align: center; }
+  @media (max-width: 600px) {
+    .nav {
+      padding: 10px;
+      margin-bottom: 10px; } }
+
+.nav__item {
+  display: inline-block;
+  margin-right: 30px;
+  padding: 10px;
+  border-radius: 8px; }
+  .nav__item.active {
+    background-color: #3FBDDB; }
+
+.nav__link {
+  color: #3FBDDB;
+  font-weight: 600;
+  text-decoration: none; }
+  .nav__link.active {
+    color: #fff; }
+
+* {
+  box-sizing: border box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body {
+  margin: 0 auto;
+  height: 100%; }
+  @media (max-width: 600px) {
+    body {
+      padding: 20px; } }
+
+p, h1, h2, h3 {
+  color: #333; }
+
+h1, h2, h3 {
+  font-family: 'Khand'; }
+
+b {
+  font-weight: 700;
+  color: #505B75; }
+
+.top {
+  position: relative;
+  display: block;
+  margin: 60px auto 0; }
+  @media (max-width: 600px) {
+    .top {
+      margin: 10px auto; } }
+
+.bottom {
+  max-width: 800px;
+  margin: 0 auto; }
+
+.content-area {
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.6; }
+  @media (max-width: 600px) {
+    .content-area {
+      line-height: 1.9;
+      font-size: 15px; } }
