@@ -29,60 +29,88 @@
 
     <h1>Sensutec</h1>
     <p>Welcome to Sensutec Cortext</p>
-    <form action="http://sensutec.elasticbeanstalk.com/research" method="post">
-      <b>**********************************************************************************</b><br>
-      <b>********************* Cortext.Read.Decompose Demonstration ***********************</b><br>
-      <b>**********************************************************************************</b>
+    <br>
+    <b>*********************************************************************************************</b>
+    <br>
       <br>
-      <br>
-      <b>20160330 The "cortext read decompose (input_identity) (input)" functionality runs </b>
-      <br>
-      <p>This page is a simple gui that demonstrates a POST RESTful communication through an API hosted by AWS</p>
-      <p>The read.decompose functionally decomposes and commits a text input to cortext.memory.mind.oracle </p>
-      <p>The overall input format could easily be JSON</p>
-      <br>
-
       <p>The command line structure would look something like:</p>
-      <p>cortext (sensu) (action_potential) [identity] (conditional_input)</p>
-      <p>
-      (sensu)
-      </p>
-      <input type="text" name="sensu" placeholder="read">
+      <b>(application) (sensu) (action_potential) [identity] (conditional_input)</b>
       <br>
-      <p>
-      (action_potential)
-      </p>
-      <input type="text" name="action_potential" placeholder="decompose">
       <br>
-      <p>
-      [identity] - Tag you input with String
-      </p>
-      <input type="text" name="identity">
+      <p>Demo Order of Commands:</b>
       <br>
-      <p>
+      <b>cortext read decompose identity_example This ia an example input. It can be of any length. Try to hold off on complex sentences; but, all should work.</b>
+      <br>
+      <b>cortext phen read identity_example</b>
+      <br>
+      <b>cortext phen extract_read identity_example</b>
+      <br>
+      <br>
+      <p>-------------------------------------------------------------------------------------</p>
+      <p>--- You will only see results at the end of the last command ---</p>
+      <p>-------------------------------------------------------------------------------------</p>
+      <br>
+      <p>------------------------------------------------------------------------------------------------------------</p>
+      <p>--- Literally return to this page to enter next command with same [Identity] ---</p>
+      <p>------------------------------------------------------------------------------------------------------------</p>
+      <form name="cortext_api" action="https://50jchlkw2k.execute-api.us-west-2.amazonaws.com/testing/" method="post" target="_blank">
+      <br>
+      <b>Cortext Demo</b>
+      <br>
+      <br>
+    <input type="text" name="application" placeholder="cortext" readonly><b> (application)</b>
+      <br>
+      <br>
+      <input type="text" name="sensu"><b>(sensu)</b>
+      <br>
+      <br>
+      <input type="text" name="action_potential"><b> (action_potential)</b>
+      <br>
+      <br>
+      <input type="text" name="identity"><b> [identity] - Unique tag from input</b>
+      <br>
+      <br>
+      <b>
       (conditional_input)
-      </p>
+    </b>
+    <br>
       <textarea  name="input" cols=80 rows=12 wrap='off'></textarea>
       <br>
       <br>
-      <input type="submit" value="read.decompose">
+      <input type="radio" id="command" name="command" value="post" checked> read.decompose<br>
+      <input type="radio" id="command" name="command" value="post"> phen.read<br>
+      <input type="radio" id="command" name="command" value="get"> phen.extract_read
+      <br>
+      <br>
+      <br>
+      <b>  ----------) </b><input id="s1" type="submit" value="S u b m i t"><b>  (---------- </b>
+      <br>
+      <br>
       </form>
+      <script type="text/javascript">
+        {
+
+          document.getElementsById("s1").onclick = function() {
+            var method = document.getElementById("command").value;
+              document.getElementById("cortext_api").method = method;
+          };
+        }
+      </script>
       <br>
       <br>
   <p>Ideally I am shaping the command structure of Cortext to allow usage with Cortext.Tabula, <b>and</b> a command line application</p>
-    <p>(sensu) arguments are: read, see, hear, tabula, logos, pathos, ethos, dream, memory</p>
+    <p>(sensu) arguments are: read, see, hear, phen, tabula, logos, pathos, ethos, dream, memory</p>
     <p>(action_potential) arguments are:</p>
     <p>read: decompose, associate</p>
     <p>see: trace</p>
     <p>hear: breakdown</p>
+    <p>phen: read, extract_read</p>
     <p>logos: aPosteriori, aPriori</p>
     <p>pathos: sentiment, intent</p>
-    <p>ehtos: event, markov</p>
-    <p>dream: </p>
+    <p>ethos: event, markov</p>
+    <p>dream: (To Be Determined)</p>
     <p>memory: mind, reflex</p>
-    <p>
-      tabula:
-    </p>
+    <p>tabula: (To Be Determined)</p>
     <br>
 
 
