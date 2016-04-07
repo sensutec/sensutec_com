@@ -53,7 +53,18 @@
       <p>------------------------------------------------------------------------------------------------------------</p>
       <p>--- Literally return to this page to enter next command with same [Identity] ---</p>
       <p>------------------------------------------------------------------------------------------------------------</p>
-      <form id="cortext_api" name="cortext_api" action="http://sensutec.elasticbeanstalk.com/cortext" method="post" target="_blank">
+      <script type="text/javascript">
+          function changeMethod(frm){
+            var method = document.getElementById("command").value;
+
+            frm.method = method;
+
+            return;
+
+          }
+
+      </script>
+      <form id="cortext_api" name="cortext_api" action="http://sensutec.elasticbeanstalk.com/cortext" method="post" target="_blank" onsubmit="return changeMethod(this);">
       <br>
       <b>Cortext Demo</b>
       <br>
@@ -87,15 +98,6 @@
       <br>
       <br>
       </form>
-      <script type="text/javascript">
-        {
-
-          document.getElementsById("s1").onclick = function() {
-            var method = document.getElementById("command").value;
-              document.getElementById("cortext_api").method = method;
-          };
-        }
-      </script>
       <br>
       <br>
   <p>Ideally I am shaping the command structure of Cortext to allow usage with Cortext.Tabula, <b>and</b> a command line application</p>
