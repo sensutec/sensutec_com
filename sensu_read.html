@@ -53,20 +53,9 @@
       <p>------------------------------------------------------------------------------------------------------------</p>
       <p>--- Literally return to this page to enter next command with same [Identity] ---</p>
       <p>------------------------------------------------------------------------------------------------------------</p>
-      <script type="text/javascript">
-          function changeMethod(frm){
-            var method = document.getElementById("command").value;
-
-            frm.method = method;
-
-            return;
-
-          }
-
-      </script>
-      <form id="cortext_api" name="cortext_api" action="http://sensutec.elasticbeanstalk.com/cortext" method="post" target="_blank" onsubmit="return changeMethod(this);">
+      <form id="cortext_api_post" name="cortext_api_post" action="http://sensutec.elasticbeanstalk.com/cortext" method="post" target="_blank">
       <br>
-      <b>Cortext Demo</b>
+      <b>Read.Decompose and Phen.Read</b>
       <br>
       <br>
     <input type="text" name="application" placeholder="cortext" readonly><b> (application)</b>
@@ -88,11 +77,6 @@
       <textarea  name="input" cols=80 rows=12 wrap='off'></textarea>
       <br>
       <br>
-      <input type="radio" id="command" name="command" value="post" checked> read.decompose<br>
-      <input type="radio" id="command" name="command" value="post"> phen.read<br>
-      <input type="radio" id="command" name="command" value="get"> phen.extract_read
-      <br>
-      <br>
       <br>
       <b>  ----------) </b><input id="s1" type="submit" value="S u b m i t"><b>  (---------- </b>
       <br>
@@ -100,6 +84,26 @@
       </form>
       <br>
       <br>
+      <form id="cortext_api_get" name="cortext_api_get" action="http://sensutec.elasticbeanstalk.com/cortext" method="get" target="_blank" >
+      <br>
+      <b>Phen.Extract_read</b>
+      <br>
+      <br>
+    <input type="text" name="application" placeholder="cortext" readonly><b> (application)</b>
+      <br>
+      <br>
+      <input type="text" name="sensu"><b>(sensu)</b>
+      <br>
+      <br>
+      <input type="text" name="action_potential"><b> (action_potential)</b>
+      <br>
+      <br>
+      <input type="text" name="identity"><b> [identity] - Unique tag from input</b>
+      <br><br><br>
+      <b>  ----------) </b><input id="s2" type="submit" value="S u b m i t"><b>  (---------- </b>
+      <br>
+      <br>
+      </form>
   <p>Ideally I am shaping the command structure of Cortext to allow usage with Cortext.Tabula, <b>and</b> a command line application</p>
     <p>(sensu) arguments are: read, see, hear, phen, tabula, logos, pathos, ethos, dream, memory</p>
     <p>(action_potential) arguments are:</p>
