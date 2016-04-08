@@ -2,25 +2,20 @@
   "name": "sensutec_com",
   "version": "1.0.0",
   "description": "Sensutec Home Page",
-  "main": "src/main.js",
+  "main": "/",
   "dependencies": {},
   "devDependencies": {
-    "browser-sync": "^2.11.2",
-    "del": "^2.2.0",
+    "express": "^4.13.4",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
-    "gulp-concat": "^2.6.0",
-    "gulp-debug": "^2.1.2",
-    "gulp-include": "^2.1.0",
-    "gulp-replace": "^0.5.4",
-    "gulp-sass": "^2.2.0",
-    "gulp-uglify": "^1.5.3",
-    "gulp-watch": "^4.3.5"
+    "gulp-sass": "^2.2.0"
   },
   "scripts": {
-    "build": "NODE_ENV=production gulp",
-    "dev": "NODE_ENV=development gulp",
-    "serve": "browser-sync start --server --files 'index.html, **/*.css, **/*.html'"
+    "start": "NODE_ENV=dev node server.js",
+    "build": "NODE_ENV=prod gulp && jspm bundle-sfx app/main.js public/app.js",
+    "prod": "NODE_ENV=prod node server.js",
+    "gulp-build": "NODE_ENV=production gulp",
+    "gulp-dev": "NODE_ENV=development gulp"
   },
   "repository": {
     "type": "git",
@@ -34,5 +29,18 @@
   "bugs": {
     "url": "https://github.com/sensutec/sensutec_com/issues"
   },
-  "homepage": "https://github.com/sensutec/sensutec_com#readme"
+  "homepage": "https://github.com/sensutec/sensutec_com#readme",
+  "jspm": {
+    "configFile": "jspm.config.js",
+    "dependencies": {
+      "express": "npm:express@^4.13.4",
+      "react": "npm:react@^15.0.0",
+      "react-dom": "npm:react-dom@^15.0.0"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
 }
