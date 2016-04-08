@@ -30,5 +30,3 @@ npm run dev
 Build files into `build/` folder
 ```
 npm run build
-```  
-testingsssss
