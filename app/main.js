@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {HelloWorld} from 'app/components/hello-world';
+import App from './App';
 
-let container = document.getElementById('root');
-let component = ReactDOM.render(React.createElement(HelloWorld), container);
+// Bootstrap application to DOM
+ReactDOM.render(<App />, document.getElementById('app'));
