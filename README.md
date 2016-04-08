@@ -31,4 +31,4 @@ Build files into `build/` folder
 ```
 npm run build
 ```  
-testing
+testings
