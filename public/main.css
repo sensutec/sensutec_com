@@ -1,8 +1,155 @@
+@import url(https://fonts.googleapis.com/css?family=Khand:500);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+.content {
+  max-width: 500px;
+  margin: 0 auto; }
+
+.logo {
+  margin-bottom: 10px; }
+
+.logo__svg {
+  font-family: "Khand"; }
+  @media (max-width: 600px) {
+    .logo__svg {
+      padding: 0; } }
+
+.logo__text {
+  font-size: 23px;
+  color: #505B75;
+  text-align: center;
+  margin-bottom: 0; }
+  @media (max-width: 600px) {
+    .logo__text {
+      font-size: 13px;
+      font-weight: 500; } }
+
+.st0 {
+  fill: #FFFFFF; }
+
+.st1 {
+  fill: #2D8796; }
+
+.st2 {
+  fill: #3FBDDB; }
+
+.st3 {
+  fill: #543E51; }
+
+.st4 {
+  fill: #843860; }
+
+.st5 {
+  fill: #F4B44D; }
+
+.st6 {
+  fill: #776900; }
+
+.st7 {
+  fill: #978A00; }
+
+.st8 {
+  fill: none;
+  stroke: #D3D3D3;
+  stroke-width: 9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10; }
+
+.st9 {
+  fill: #CCCCCC; }
+
+.st10 {
+  fill: #D9D9D9; }
+
+.st11 {
+  fill: none;
+  stroke: #CCCCCC;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10; }
+
+.st12 {
+  fill: #A83920; }
+
+.st13 {
+  fill: #5B1809; }
+
+.st14 {
+  fill: #505B75; }
+
+.st15 {
+  fill: #DF9A78; }
+
+.st16 {
+  fill: #FC9C46; }
+
+.st17 {
+  fill: #E1578A; }
+
+.st18 {
+  font-family: 'Khand'; }
+
+.st19 {
+  font-size: 41px; }
+
+.nav {
+  margin: 0 auto;
+  padding: 30px 50px;
+  color: #505B75;
+  text-align: center;
+  margin-bottom: 15px; }
+  @media (max-width: 600px) {
+    .nav {
+      padding: 10px;
+      margin-bottom: 25px; } }
+
+.nav__link {
+  display: inline-block;
+  margin-right: 30px;
+  color: #3FBDDB;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 6px; }
+  .nav__link.active {
+    background-color: #3FBDDB;
+    color: #fff; }
+  @media (max-width: 600px) {
+    .nav__link {
+      font-size: 14px; } }
+
 * {
   box-sizing: border box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
-.nav {
-  background-color: #3fbddb;
-  padding: 30px; }
+body {
+  margin: 0 auto;
+  padding: 60px 20px;
+  height: 100%; }
+  @media (max-width: 600px) {
+    body {
+      padding: 40px 20px; } }
+
+p, h1, h2, h3 {
+  color: #333;
+  font-size: 18px; }
+
+p {
+  margin-bottom: 20px;
+  line-height: 1.8; }
+  @media (max-width: 600px) {
+    p {
+      margin-bottom: 10px; } }
+
+h1, h2, h3 {
+  font-family: 'Khand'; }
+
+b {
+  font-weight: 700;
+  color: #505B75; }
