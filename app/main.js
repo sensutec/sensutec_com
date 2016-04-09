@@ -1,5 +1,3 @@
-import 'systemjs-hot-reloader';
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';

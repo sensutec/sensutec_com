@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Khand:500);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
 @import 'variables';
+@import 'mixins';
 @import 'content';
 @import 'logo';
 @import 'nav';
@@ -17,24 +18,24 @@
 
 body {
     margin: 0 auto;
-    padding: 60px 20px;
+    padding: 1.5em 3em;
     height: 100%;
     
-    @media (max-width: $mobile) {
-        padding: 40px 20px;
+    @include breakpoint($mobile) {
+        padding: 1.5em 2em;
     }
 }
 
 p, h1, h2, h3 {
     color: #333;
-    font-size: 18px;
 }
 
 p {
+    font-size: 1.1em;
     margin-bottom: 20px;
     line-height: 1.8;
     
-    @media (max-width: $mobile) {
+    @include breakpoint($mobile) {
         margin-bottom: 10px;
     }
 }

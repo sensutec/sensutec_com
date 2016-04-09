@@ -1,25 +1,31 @@
 .logo {
-    margin-bottom: 10px;
+    font-family: $header;
+    margin-bottom: 1.5em;
+    
+    @include breakpoint($tablet) {
+        margin-bottom: 2em;
+    }
 }
 
 .logo__svg {
-    font-family: $header;
     
-    @media (max-width: $mobile) {
-        padding: 0;
-    }
 }
 
 .logo__text {
-    font-size: 23px;
     color: $dark;
     text-align: center;
     margin-bottom: 0;
-    
-    @media (max-width: $mobile) {
-        font-size: 13px;
-        font-weight: 500;
+    font-size: 1.45em;
+    line-height: 1.4;
+
+    @include breakpoint($tablet) {
+        font-size: 1.1em;
     }
+    
+    @include breakpoint($mobile) {
+        font-size: 0.9em;
+    }
+
 }
 
 .st0{fill:#FFFFFF;}

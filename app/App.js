@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router, Route, IndexRedirect, hashHistory } from 'react-router';
+import { Router, Route, IndexRedirect, browserHistory } from 'react-router';
 import Logo from './components/logo/Logo.js';
 import Nav from './components/nav/Nav.js';
 import OurVision from './components/our-vision/OurVision.js';
@@ -15,7 +15,7 @@ const Container = (props) =>
 class App extends React.Component {
     render(){
         return (
-            <Router history={ hashHistory }>
+            <Router history={ browserHistory }>
                 <Route path="/" component={Container}>
                     <IndexRedirect to="/our-vision" />
                     <Route path="our-vision" component={OurVision}></Route>

@@ -1,4 +1,8 @@
 .content {
     max-width: 500px;
     margin: 0 auto;
+    
+    @include breakpoint($mobile) {
+        max-width: none;
+    }
 }

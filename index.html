@@ -13,9 +13,9 @@
 	<script>
         System.trace = true
         System.import('systemjs-hot-reloader').then(function(HotReloader){
-            new HotReloader.default('http://localhost:8090')
+            new HotReloader.default('http://localhost:8090');
+            System.import('app/main')
         });
-        System.import('app/main')
 	</script>
 
 </body>
