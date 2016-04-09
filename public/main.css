@@ -5,7 +5,7 @@
   margin: 0 auto; }
 
 .logo {
-  margin-bottom: 20px; }
+  margin-bottom: 10px; }
 
 .logo__svg {
   font-family: "Khand"; }
@@ -14,10 +14,10 @@
       padding: 0; } }
 
 .logo__text {
-  margin-top: -10px;
   font-size: 23px;
   color: #505B75;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 0; }
   @media (max-width: 600px) {
     .logo__text {
       font-size: 13px;

@@ -9943,6 +9943,11 @@ $__System.register("9c", ["9e", "9f", "a0", "a1", "9d"], function (_export) {
                                     React.createElement("ellipse", { transform: "matrix(0.7195 -0.6945 0.6945 0.7195 5.7474 22.2746)", className: "st2", cx: "30.4", cy: "4", rx: "2.6", ry: "2.6" }),
                                     React.createElement("ellipse", { transform: "matrix(0.7195 -0.6945 0.6945 0.7195 0.5026 9.2903)", className: "st17", cx: "11.8", cy: "4", rx: "2.6", ry: "2.6" })
                                 )
+                            ),
+                            React.createElement(
+                                "p",
+                                { className: "logo__text" },
+                                "Bringing organic intelligence to artificial systems"
                             )
                         );
                     }

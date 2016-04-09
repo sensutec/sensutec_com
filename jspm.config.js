@@ -22,6 +22,7 @@ System.config({
     "react-dom": "npm:react-dom@15.0.0",
     "react-router": "npm:react-router@2.0.1",
     "scss": "github:KevCJones/plugin-scss@0.2.6",
+    "systemjs-hot-reloader": "github:capaj/systemjs-hot-reloader@0.5.6",
     "github:KevCJones/plugin-scss@0.2.6": {
       "autoprefixer": "npm:autoprefixer@6.3.6",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
@@ -32,6 +33,11 @@ System.config({
       "reqwest": "github:ded/reqwest@2.0.5",
       "sass.js": "npm:sass.js@0.9.8",
       "url": "github:jspm/nodelibs-url@0.1.0"
+    },
+    "github:capaj/systemjs-hot-reloader@0.5.6": {
+      "debug": "npm:debug@2.2.0",
+      "socket.io-client": "github:socketio/socket.io-client@1.4.5",
+      "weakee": "npm:weakee@1.0.0"
     },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
