@@ -3,7 +3,7 @@ var express = require('express');
 var app = express();
 var env = process.env.NODE_ENV || 'prod';
 
-var port = env === 'dev' ? 3000 : 8080;
+var port = env === 'dev' ? 3000 : 3000;
 var index = env === 'dev' ? '/index.html' : '/public/index.html';
 
 if (env === 'dev') {
