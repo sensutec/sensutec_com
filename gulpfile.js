@@ -18,17 +18,34 @@ gulp.task('styles', function() {
 
 // watch for scss changes
 gulp.task('serve', ['styles'], function() {
+    require('chokidar-socket-emitter')({port: 8090});
     
-    browserSync.init({
-        port: 3000,
-        server: '.',
-        open: false,
-        reloadOnRestart: true,
-        notify: false
+    var express = require('express');
+    var app = express();
+    
+    app.get('/', function(req, res) {
+        res.setHeader('Access-Control-Allow-Origin', '*');
+        res.setHeader('Access-Control-Allow-Credentials', 'true');
+        res.sendFile(__dirname + '/index.html');
     });
     
-    gulp.watch('app/scss/*.scss', ['styles']);
-    gulp.watch('app/**/*.js').on('change', browserSync.reload);
+    app.use('/', express.static(__dirname + '/'));
+    
+    app.listen(3000, 'localhost');
+    
+    browserSync.init({
+        open: false,
+        reloadOnRestart: true,
+        notify: false,
+        proxy: {
+            target: 'http://localhost:3000'
+        }
+    });
+    
+    gulp.watch('app/scss/*.scss', ['styles'], function() {
+        browserSync.reload;
+    });
+    // gulp.watch('app/**/*.js').on('change', browserSync.reload);
     
 });
 
