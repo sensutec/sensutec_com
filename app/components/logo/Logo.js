@@ -59,7 +59,7 @@ class Logo extends React.Component {
                         <ellipse transform="matrix(0.7195 -0.6945 0.6945 0.7195 0.5026 9.2903)" className="st17" cx="11.8" cy="4" rx="2.6" ry="2.6"/>
                     </g>
                 </svg>
-                <p className="logo__text">sBringing organic intelligence to artificial systems</p>
+                <p className="logo__text">Bringing organic intelligence to artificial systems</p>
             </div>
         )
     }
