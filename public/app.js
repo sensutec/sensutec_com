@@ -9947,7 +9947,7 @@ $__System.register("9c", ["9e", "9f", "a0", "a1", "9d"], function (_export) {
                             React.createElement(
                                 "p",
                                 { className: "logo__text" },
-                                "sBringing organic intelligence to artificial systems"
+                                "Bringing organic intelligence to artificial systems"
                             )
                         );
                     }
