@@ -3,22 +3,16 @@
 .content {
   max-width: 500px;
   margin: 0 auto; }
-  @media (max-width: 24em) {
-    .content {
-      max-width: none; } }
-  @media only screen and (max-device-width: 24em) {
+  @media all and (max-device-width: 24em) {
     .content {
       max-width: none; } }
 
 .logo {
   font-family: "Khand";
   margin-bottom: 1.5em; }
-  @media (max-width: 30em) {
+  @media all and (max-device-width: 30em) {
     .logo {
-      margin-bottom: 2em; } }
-  @media only screen and (max-device-width: 30em) {
-    .logo {
-      margin-bottom: 2em; } }
+      margin-bottom: 3em; } }
 
 .logo__text {
   color: #505B75;
@@ -26,16 +20,7 @@
   margin-bottom: 0;
   font-size: 1.45em;
   line-height: 1.4; }
-  @media (max-width: 30em) {
-    .logo__text {
-      font-size: 1.1em; } }
-  @media only screen and (max-device-width: 30em) {
-    .logo__text {
-      font-size: 1.1em; } }
-  @media (max-width: 24em) {
-    .logo__text {
-      font-size: 0.9em; } }
-  @media only screen and (max-device-width: 24em) {
+  @media all and (max-device-width: 30em) {
     .logo__text {
       font-size: 0.9em; } }
 
@@ -114,12 +99,9 @@
   padding: 0.5em;
   color: #505B75;
   text-align: center; }
-  @media (max-width: 24em) {
+  @media all and (max-device-width: 24em) {
     .nav {
-      margin-bottom: 2em; } }
-  @media only screen and (max-device-width: 24em) {
-    .nav {
-      margin-bottom: 2em; } }
+      margin-bottom: 3em; } }
 
 .nav__link {
   display: inline-block;
@@ -132,10 +114,7 @@
   .nav__link.active {
     background-color: #3FBDDB;
     color: #fff; }
-  @media (max-width: 24em) {
-    .nav__link {
-      font-size: 2em; } }
-  @media only screen and (max-device-width: 24em) {
+  @media all and (max-device-width: 24em) {
     .nav__link {
       font-size: 2em; } }
 
@@ -152,10 +131,7 @@ body {
   margin: 0 auto;
   padding: 1.5em 3em;
   height: 100%; }
-  @media (max-width: 24em) {
-    body {
-      padding: 1.5em 2em; } }
-  @media only screen and (max-device-width: 24em) {
+  @media all and (max-device-width: 24em) {
     body {
       padding: 1.5em 2em; } }
 
@@ -166,10 +142,7 @@ p {
   font-size: 1.1em;
   margin-bottom: 20px;
   line-height: 1.8; }
-  @media (max-width: 24em) {
-    p {
-      margin-bottom: 10px; } }
-  @media only screen and (max-device-width: 24em) {
+  @media all and (max-device-width: 24em) {
     p {
       margin-bottom: 10px; } }
 

@@ -1,9 +1,5 @@
 @mixin breakpoint($point) {
-    @media (max-width: $point) {
-        @content;
-    }
-    
-    @media only screen and (max-device-width: $point) {
+    @media all and (max-device-width: $point) {
         @content;
     }
 }

@@ -29,7 +29,13 @@ gulp.task('serve', ['styles'], function() {
         res.sendFile(__dirname + '/index.html');
     });
     
+    // directory to serve static content
     app.use('/', express.static(__dirname + '/'));
+    
+    // serve index.html on refresh
+    app.route('/*').get(function(req, res) { 
+        res.sendFile(__dirname + '/index.html');
+    });
     
     app.listen(3000, 'localhost');
     

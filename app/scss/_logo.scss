@@ -3,7 +3,7 @@
     margin-bottom: 1.5em;
     
     @include breakpoint($tablet) {
-        margin-bottom: 2em;
+        margin-bottom: 3em;
     }
 }
 
@@ -19,10 +19,6 @@
     line-height: 1.4;
 
     @include breakpoint($tablet) {
-        font-size: 1.1em;
-    }
-    
-    @include breakpoint($mobile) {
         font-size: 0.9em;
     }
 
