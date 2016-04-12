@@ -1,29 +1,29 @@
 .nav {
-    margin: 0 auto 1.5em;
-    padding: 0.5em;
-    color: $dark;
-    text-align: center;
-    
-    @include breakpoint($mobile) {
-        margin-bottom: 3em;
-    }
+    background-color: $primary;
+    height: 140px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .nav__link {
     display: inline-block;
-    margin-right: 1em;
-    color: $primary;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 0.5em;
-    border-radius: 0.25em;
-    
-    &.active {
-        background-color: $primary;
-        color: #fff;
-    }
-    
-    @include breakpoint($mobile) {
-        font-size: 2em;
-    }
+    flex: 1;
+    width: 60px;
+    background-color: $primary;
+    display: flex;
+    flex-flow: column-wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__svg {
+    max-width: 120px;
+}
+
+.nav__g {
+    transform: scale(2.8);
 }

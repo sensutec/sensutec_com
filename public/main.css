@@ -14,6 +14,9 @@
     .logo {
       margin-bottom: 3em; } }
 
+.logo__svg {
+  margin-bottom: 1em; }
+
 .logo__text {
   color: #505B75;
   text-align: center;
@@ -95,28 +98,53 @@
   font-size: 41px; }
 
 .nav {
-  margin: 0 auto 1.5em;
-  padding: 0.5em;
-  color: #505B75;
-  text-align: center; }
-  @media all and (max-device-width: 24em) {
-    .nav {
-      margin-bottom: 3em; } }
+  background-color: #3FBDDB;
+  height: 140px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .nav__link {
   display: inline-block;
-  margin-right: 1em;
-  color: #3FBDDB;
-  font-weight: 600;
-  text-decoration: none;
-  padding: 0.5em;
-  border-radius: 0.25em; }
-  .nav__link.active {
-    background-color: #3FBDDB;
-    color: #fff; }
-  @media all and (max-device-width: 24em) {
-    .nav__link {
-      font-size: 2em; } }
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 60px;
+  background-color: #3FBDDB;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column-wrap;
+      -ms-flex-flow: column-wrap;
+          flex-flow: column-wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.nav__svg {
+  max-width: 120px; }
+
+.nav__g {
+  -webkit-transform: scale(2.8);
+          transform: scale(2.8); }
 
 * {
   box-sizing: border box;
@@ -129,11 +157,8 @@
 
 body {
   margin: 0 auto;
-  padding: 1.5em 3em;
+  padding: 0;
   height: 100%; }
-  @media all and (max-device-width: 24em) {
-    body {
-      padding: 1.5em 2em; } }
 
 p, h1, h2, h3 {
   color: #333; }

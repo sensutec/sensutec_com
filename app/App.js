@@ -5,12 +5,17 @@ import Nav from './components/nav/Nav.js';
 import OurVision from './components/our-vision/OurVision.js';
 import OurApplication from './components/our-application/OurApplication.js';
 
-const Container = (props) => 
-    <div className="content">
-        <Logo />
-        <Nav />
-        {props.children}
-    </div>;
+class Container extends React.Component {
+    render() {
+        return (
+            <div className="content">
+                <Logo />
+                {this.props.children}
+                <Nav />
+            </div>
+        )
+    }
+}
 
 class App extends React.Component {
     render(){
