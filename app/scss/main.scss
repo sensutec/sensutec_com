@@ -7,19 +7,16 @@
 @import 'nav';
 
 * {
-    box-sizing: border box;
-    margin: 0;
+    box-sizing: border-box;
     padding: 0;
+    margin: 0;
     font-family: 'Open Sans';
-    font-weight: 300;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 body {
     margin: 0 auto;
-    padding: 0;
-    height: 100%;
 }
 
 p, h1, h2, h3 {
@@ -27,6 +24,7 @@ p, h1, h2, h3 {
 }
 
 p {
+    font-weight: 300;
     font-size: 1.1em;
     margin-bottom: 20px;
     line-height: 1.8;

@@ -1,6 +1,6 @@
 .logo {
     font-family: $header;
-    margin-bottom: 1.5em;
+    margin-bottom: 3.75em;
     
     @include breakpoint($tablet) {
         margin-bottom: 3em;

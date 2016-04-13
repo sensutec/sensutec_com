@@ -9,9 +9,11 @@ class Container extends React.Component {
     render() {
         return (
             <div className="content">
-                <Logo />
-                {this.props.children}
                 <Nav />
+                <div className="content-inner">
+                    <Logo />
+                    {this.props.children}
+                </div>
             </div>
         )
     }
