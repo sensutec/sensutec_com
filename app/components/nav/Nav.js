@@ -9,15 +9,17 @@ class Nav extends React.Component {
         return (
             <nav className="nav">
                 {Links.map(function(link, i) {
-                    return <Link key={i} to={link.url} className={link.linkClassName} activeClassName={link.activeClassName}>
-                        <div className={link.textClassName}>{link.name}</div>
-                        <svg viewBox="0 0 40 40" className="nav__svg">
-                            <g className="nav__g">
-                                <path className="st0" d={link.path} />
-                            </g>
-                        </svg>
-                    </Link>;
-                }.bind(this))}
+                    return <Link to={link.url} key={i} className="nav__tab" activeClassName="active">
+                        <div className="nav__text">{link.name}</div>
+                        <div className="nav__svg--wrapper">
+                            <svg viewBox="0 0 40 40" className="nav__svg">
+                                <g>
+                                    <path d={link.path} />
+                                </g>
+                            </svg>
+                        </div>
+                    </Link>
+                })}
             </nav>
         )
     }

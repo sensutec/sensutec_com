@@ -1,25 +1,33 @@
 .logo {
-    font-family: $header;
-    margin-bottom: 3.75em;
+    margin-bottom: 1em;
     
     @include breakpoint($tablet) {
-        margin-bottom: 3em;
+        font-family: $header;
+        margin-bottom: 3.75em;
     }
 }
 
 .logo__svg {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
+    
+    @include breakpoint($mobile) {
+        margin-bottom: 1em;
+    }
 }
 
 .logo__text {
     color: $dark;
+    font-size: 1em;
     text-align: center;
-    margin-bottom: 0;
-    font-size: 1.45em;
-    line-height: 1.4;
+    
+    @include breakpoint($tablet) {
+        margin-bottom: 0;
+        font-size: 1.1em;
+    }
 
     @include breakpoint($tablet) {
-        font-size: 0.9em;
+        margin-bottom: 0;
+        font-size: 1.4em;
     }
 
 }

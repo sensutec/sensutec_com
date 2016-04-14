@@ -1,10 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Khand:500);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
 @import 'variables';
 @import 'mixins';
 @import 'content';
 @import 'logo';
 @import 'nav';
+
 
 * {
     box-sizing: border-box;
@@ -17,6 +19,9 @@
 
 body {
     margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 p, h1, h2, h3 {

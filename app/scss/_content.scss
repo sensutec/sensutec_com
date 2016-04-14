@@ -1,5 +1,7 @@
+/*
 .app {
     height: 100%;
+    width: 100%;
 }
 
 .content {
@@ -13,9 +15,32 @@
 
 .content-inner {
     margin: 0 auto;
-    max-width: 35em;
     
     @include breakpoint($tablet) {
         padding: 2em;
+    }
+}
+
+
+.content-body {
+    max-width: 30em;
+}
+*/
+
+.content {
+    max-width: none;
+    
+    @include breakpoint($mobile) {
+        max-width: 50em;
+        margin: 0 auto;
+    }
+}
+
+.content-inner {
+    padding: 1em;
+    
+    @include breakpoint($tablet) {
+        margin: 0 auto;
+        max-width: 35em;
     }
 }
