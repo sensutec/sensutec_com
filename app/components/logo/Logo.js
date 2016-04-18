@@ -1,14 +1,12 @@
 import React from 'react';
 
+
 class Logo extends React.Component {
     render(){
         return (
-            <div className="logo">
-                <svg className="logo__svg" version="1.1" x="0px" y="0px"
-	 viewBox="0 0 183 41.2">
-                    <g>
-                        <text transform="matrix(1 0 0 1 51.3233 37.6846)" className="st14 st18 st19">Sensutec</text>
-                    </g>
+            <div className="logo__img">
+                <svg version="1.1" x="0px" y="0px"
+	 viewBox="0 0 50 42" width="100%">
                     <g>
                         <path className="st10" d="M14.5,40.8c-2.1-0.8-3.8-2.6-4.3-4c-0.5-1.4-0.2-2.6-0.2-3.1c-4.6,0-5.8-0.3-7.8-2.1
                             c-1.5-1.3-2.3-5.1-2.1-7.8c0.1-1.4,0.8-3.3,1.3-4.3c0.7-1.5,3.7-5.3,7.6-7.3c2.8-1.5,7.3-2.6,12.5-2.6c10.8,0,18.3,7.3,20.4,10.6
@@ -59,7 +57,6 @@ class Logo extends React.Component {
                         <ellipse transform="matrix(0.7195 -0.6945 0.6945 0.7195 0.5026 9.2903)" className="st17" cx="11.8" cy="4" rx="2.6" ry="2.6"/>
                     </g>
                 </svg>
-                <p className="logo__text">Bringing organic intelligence to artificial systems</p>
             </div>
         )
     }

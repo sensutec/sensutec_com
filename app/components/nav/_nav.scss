@@ -1,0 +1,151 @@
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: $primary;
+
+    @include breakpoint($mobile) {
+        position: relative;
+        bottom: 0;
+    }
+}
+
+.nav__right {
+    flex: 4;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav__brand {
+    display: none;
+    
+    @include breakpoint($tablet) {
+        display: inline-block;
+        flex: 3;
+    }
+}
+
+.nav__brand .logo__img {
+
+    padding-top: 1em;
+    max-width: 5em;
+    
+    ellipse, path {
+        fill: white;
+    }
+}
+
+.nav__tab {
+    padding: 0.35em 0 0;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lighten(#61cee2, 20%);
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    
+    & > .nav__text {
+        color: darken($primary, 15%);
+    }
+    
+    & > .nav__svg--wrapper path {
+        fill: darken($primary, 15%);
+    }
+    
+    &:hover {
+        background-color: lighten(#61cee2, 30%);
+    }
+    
+    &:nth-of-type(2n) {
+        background-color: lighten(#61cee2, 25%);
+        
+        & > .nav__text {
+            color: darken($primary, 15%);
+        }
+        
+        & .nav__svg path {
+            fill: darken($primary, 15%);
+        }
+        
+        &:hover {
+            background-color: lighten(#61cee2, 30%);
+        }
+        
+    }
+    
+    &:active {
+        transition: background-color 0.2s ease;
+        background-color: darken($primary, 10%) !important;
+        
+        & > .nav__text {
+            color: #fff;
+        }
+        
+        & > .nav__svg--wrapper path {
+            fill: #fff;
+        }
+    }
+    
+    @include breakpoint($mobile) {
+        padding: 0.5em;
+
+    }
+    
+
+}
+
+
+
+.nav__tab, .nav__tab:focus, .nav__tab:visited, .nav__tab:active {
+    text-decoration: none;
+}
+
+.nav__tab.active, .nav__tab.active:hover {
+    transition: background-color 0.2s ease;
+    background-color: $primary;
+
+    & > .nav__text {
+        color: #fff;
+    }
+    
+    & > .nav__svg--wrapper path {
+        fill: #fff;
+    }
+}
+
+.nav__text {
+    //color: $dark;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.4em;
+    
+    @include breakpoint($mobile) {
+        margin-bottom: 0.1em;
+        font-size: 0.8em;
+    }
+}
+
+.nav__svg--wrapper {
+    width: 2em;
+    
+    @include breakpoint($mobile) {
+        width: 2.5em;
+    }
+}
+
+// .nav__svg path {
+//     fill: $dark;
+// }
+
+
+
+
+

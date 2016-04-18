@@ -1,9 +1,11 @@
 import React from 'react';
-import { Router, Route, IndexRedirect, browserHistory } from 'react-router';
-import Logo from './components/logo/Logo.js';
+import { Router, Route, IndexRedirect, IndexRoute, browserHistory } from 'react-router';
+
 import Nav from './components/nav/Nav.js';
-import OurVision from './components/our-vision/OurVision.js';
-import OurApplication from './components/our-application/OurApplication.js';
+import Home from './components/home/Home.js';
+import Cortext from './components/cortext/Cortext.js';
+import AboutUs from './components/about-us/AboutUs.js';
+import Contact from './components/contact/Contact.js';
 
 class Container extends React.Component {
     render() {
@@ -11,9 +13,9 @@ class Container extends React.Component {
             <div className="content">
                 <Nav />
                 <div className="content-inner">
-                    <Logo />
                     {this.props.children}
                 </div>
+                <footer>© Copyright 2016 Sensutec, LLC.</footer>
             </div>
         )
     }
@@ -24,9 +26,10 @@ class App extends React.Component {
         return (
             <Router history={ browserHistory }>
                 <Route path="/" component={Container}>
-                    <IndexRedirect to="/our-vision" />
-                    <Route path="our-vision" component={OurVision}></Route>
-                    <Route path="our-application" component={OurApplication}></Route>
+                    <IndexRoute component={Home}></IndexRoute>
+                    <Route path="cortext" component={Cortext}></Route>
+                    <Route path="about-us" component={AboutUs}></Route>
+                    <Route path="contact-us" component={Contact}></Route>
                 </Route>
             </Router>
         )

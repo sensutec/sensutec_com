@@ -1,0 +1,74 @@
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 1em;
+    
+    @include breakpoint($tablet) {
+        margin: 2em;
+    }
+}
+
+.profile__pic {
+    width: 4em;
+    height: 4em;
+    margin-right: 1em;
+    border-radius: 50%;
+    
+    @include breakpoint($tablet) {
+        width: 8em;
+        height: 8em;
+    }
+}
+
+.profile__pic.matt {
+    background: url('../../img/matt_m.png');
+    background-size: cover;
+    background-position: 50% 50%;
+
+}
+
+.profile__pic.neel {
+    background-color: $primary;
+    background-size: cover;
+    background-position: 50% 50%;
+
+}
+
+.profile__pic.jeff {
+    background-color: $secondary;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+
+.profile__flex-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile__name {
+    margin-top: 0;
+    line-height: 1;
+    font-size: 1em;
+    
+    @include breakpoint($mobile) {
+        font-size: 1.75em;
+    }
+}
+
+.profile__title {
+    color: lighten($dark, 30%);
+    font-weight: 600;
+    font-size: 0.7em;
+    font-style: italic;
+    display: block;
+    
+    @include breakpoint($tablet) {
+        font-size: 0.8em;
+    }
+}

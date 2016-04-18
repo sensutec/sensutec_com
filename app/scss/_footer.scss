@@ -1,0 +1,16 @@
+footer {
+    display: none;
+    background-color: $primary;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    font-size: 0.75em;
+    
+    @include breakpoint($mobile) {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}

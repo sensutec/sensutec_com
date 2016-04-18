@@ -1,72 +1,80 @@
 @import url(https://fonts.googleapis.com/css?family=Khand:500);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
-/*
-.app {
-    height: 100%;
-    width: 100%;
-}
-
-.content {
-    max-width: 50em;
-    margin: 0 auto;
-    
-    @include breakpoint($mobile) {
-        max-width: none;
-    }
-}
-
-.content-inner {
-    margin: 0 auto;
-    
-    @include breakpoint($tablet) {
-        padding: 2em;
-    }
-}
-
-
-.content-body {
-    max-width: 30em;
-}
-*/
-.content {
-  max-width: none; }
-  @media all and (min-width: 28em) {
-    .content {
-      max-width: 50em;
-      margin: 0 auto; } }
-
 .content-inner {
   padding: 1em; }
   @media all and (min-width: 34em) {
     .content-inner {
       margin: 0 auto;
       max-width: 35em; } }
+  @media all and (min-width: 40em) {
+    .content-inner {
+      padding-right: 2em;
+      margin-top: 2em; } }
 
 .logo {
-  margin-bottom: 1em; }
-  @media all and (min-width: 34em) {
-    .logo {
-      font-family: "Khand";
-      margin-bottom: 3.75em; } }
-
-.logo__svg {
-  margin-bottom: 0.5em; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 0;
+  margin-left: -1em;
+  padding-left: 2em; }
   @media all and (min-width: 28em) {
-    .logo__svg {
-      margin-bottom: 1em; } }
+    .logo {
+      margin-left: 0; } }
+
+.logo__img {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 8em;
+  padding-left: 0; }
+  @media all and (min-width: 34em) {
+    .logo__img {
+      margin-left: 0.75em;
+      padding-left: 1.5em;
+      max-width: 10em; } }
+
+.logo__name {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 3.5em;
+  font-weight: 300;
+  max-width: 4em;
+  padding-top: 0.4em;
+  margin: 0; }
+  @media all and (min-width: 34em) {
+    .logo__name {
+      padding-left: 0.5em;
+      padding-top: 0.2em;
+      font-size: 4.5em; } }
+  @media all and (min-width: 40em) {
+    .logo__name {
+      padding-left: 0;
+      padding-top: 0.6em;
+      font-size: 5em; } }
 
 .logo__text {
   color: #505B75;
-  font-size: 1em;
-  text-align: center; }
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.8em;
+  font-family: 'Open Sans';
+  font-weight: 400; }
   @media all and (min-width: 34em) {
     .logo__text {
-      margin-bottom: 0;
       font-size: 1.1em; } }
-  @media all and (min-width: 34em) {
-    .logo__text {
-      margin-bottom: 0;
-      font-size: 1.4em; } }
 
 .st0 {
   fill: #FFFFFF; }
@@ -138,148 +146,6 @@
 .st19 {
   font-size: 41px; }
 
-/*
-.nav {
-    height: 5em;
-    max-width: 35em;
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    
-    @include breakpoint($mobile) {
-        position: relative;
-        display: block;
-        width: 100%;
-        height: 9.5em;
-    }
-}
-
-.text-wrapper {
-    padding: 0.5em;
-    font-size: 0.6em;
-    margin-bottom: 0;
-    padding: 0.75em 0;
-    
-    &:first-of-type {
-        border-bottom-left-radius: 0;
-    }
-    
-    &:last-of-type {
-        border-bottom-right-radius: 0;
-    }
-
-    &:nth-of-type(2n) {
-        background-color: lighten($primary, 40%);
-    }
-   
-    
-    @include breakpoint($tablet) {
-        flex: 1;
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: 600;
-        color: darken(saturate($primary, 45%), 30%);
-        text-decoration: none;
-        font-size: 0.8em;
-        padding: 0.75em 0 0.75em;
-        letter-spacing: -0.5px;
-        background-color: lighten($primary, 35%);
-        position: relative;
-    
-        &:first-of-type {
-            border-bottom-left-radius: 1em;
-        }
-        
-        &:last-of-type {
-            border-bottom-right-radius: 1em;
-        }
-    
-    }
-   
-}
-
-.nav__text {
-    font-size: 1.8em;
-    display: block;
-}
-
-.nav__link {
-    display: block;
-    height: 100%;
-    width: 100%;
-        
-    &.active, &:focus {
-        background-color: $activeColor;
-        
-        .nav__text {
-            color: #fff;
-        }
-        
-        .nav__svg .nav__g path {
-            fill: #fff;
-        }
-
-    }
-    
-    &:active {
-        background-color: darken($activeColor, 8%);
-        
-        .nav__text {
-        }
-        
-        .nav__svg .nav__g path {
-        }
-
-    }
-}
-
-.nav__svg {
-    width: 100%;
-    max-width: 10em;
-    @include breakpoint($mobile) {
-        max-width: 8em;
-    }
-}
-
-.nav__g {
-    path {
-        fill: darken(saturate($primary, 45%), 30%);
-    }
-}
-
-/*
-
-.nav {
-    width: 100%;
-    
-}
-
-.text-wrapper {
-    background-color: lighten($primary, 35%);
-    
-    &:first-of-type {
-        border-bottom-left-radius: 1em;
-    }
-    
-    &:last-of-type {
-        border-bottom-right-radius: 1em;
-    }
-    
-    &:nth-of-type(2n) {
-        background-color: lighten($primary, 40%);
-    }
-}
-
-.nav__svg {
-    background: none;
-}
-
-.nav__link {
-    background: none;
-}
-*/
 .nav {
   display: -webkit-box;
   display: -webkit-flex;
@@ -294,12 +160,42 @@
   position: fixed;
   bottom: 0;
   right: 0;
-  left: 0; }
+  left: 0;
+  background-color: #3FBDDB; }
   @media all and (min-width: 28em) {
     .nav {
       position: relative;
-      bottom: 0;
-      margin-bottom: 3em; } }
+      bottom: 0; } }
+
+.nav__right {
+  -webkit-box-flex: 4;
+  -webkit-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.nav__brand {
+  display: none; }
+  @media all and (min-width: 34em) {
+    .nav__brand {
+      display: inline-block;
+      -webkit-box-flex: 3;
+      -webkit-flex: 3;
+          -ms-flex: 3;
+              flex: 3; } }
+
+.nav__brand .logo__img {
+  padding-top: 1em;
+  max-width: 5em; }
+  .nav__brand .logo__img ellipse, .nav__brand .logo__img path {
+    fill: white; }
 
 .nav__tab {
   padding: 0.35em 0 0;
@@ -345,18 +241,9 @@
       color: #fff; }
     .nav__tab:active > .nav__svg--wrapper path {
       fill: #fff; }
-  @media all and (min-width: 34em) {
-    .nav__tab:first-of-type {
-      border-bottom-left-radius: 0; }
-    .nav__tab:last-of-type {
-      border-bottom-right-radius: 0; } }
   @media all and (min-width: 28em) {
     .nav__tab {
-      padding: 0.5em; }
-      .nav__tab:first-of-type {
-        border-bottom-left-radius: 1em; }
-      .nav__tab:last-of-type {
-        border-bottom-right-radius: 1em; } }
+      padding: 0.5em; } }
 
 .nav__tab, .nav__tab:focus, .nav__tab:visited, .nav__tab:active {
   text-decoration: none; }
@@ -388,6 +275,124 @@
     .nav__svg--wrapper {
       width: 2.5em; } }
 
+.cables {
+  width: 100%;
+  height: 20em;
+  background: url("../../img/cables.jpg");
+  background-size: cover;
+  background-position: left center;
+  margin-left: 0; }
+  @media all and (min-width: 28em) {
+    .cables {
+      height: 20em; } }
+  @media all and (min-width: 34em) {
+    .cables {
+      height: 20em; } }
+  @media all and (min-width: 34em) {
+    .cables {
+      height: 25em;
+      margin-left: 3em; } }
+
+footer {
+  display: none;
+  background-color: #3FBDDB;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  font-size: 0.75em; }
+  @media all and (min-width: 28em) {
+    footer {
+      display: block;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0; } }
+
+.profile {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 1em; }
+  @media all and (min-width: 34em) {
+    .profile {
+      margin: 2em; } }
+
+.profile__pic {
+  width: 4em;
+  height: 4em;
+  margin-right: 1em;
+  border-radius: 50%; }
+  @media all and (min-width: 34em) {
+    .profile__pic {
+      width: 8em;
+      height: 8em; } }
+
+.profile__pic.matt {
+  background: url("../../img/matt_m.png");
+  background-size: cover;
+  background-position: 50% 50%; }
+
+.profile__pic.neel {
+  background-color: #3FBDDB;
+  background-size: cover;
+  background-position: 50% 50%; }
+
+.profile__pic.jeff {
+  background-color: #FC9C46;
+  background-size: cover;
+  background-position: 50% 50%; }
+
+.profile__flex-right {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.profile__name {
+  margin-top: 0;
+  line-height: 1;
+  font-size: 1em; }
+  @media all and (min-width: 28em) {
+    .profile__name {
+      font-size: 1.75em; } }
+
+.profile__title {
+  color: #a0a9be;
+  font-weight: 600;
+  font-size: 0.7em;
+  font-style: italic;
+  display: block; }
+  @media all and (min-width: 34em) {
+    .profile__title {
+      font-size: 0.8em; } }
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -400,16 +405,37 @@ body {
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  position: relative; }
+  position: relative;
+  padding-bottom: 4em; }
 
-p, h1, h2, h3 {
+p {
   color: #333; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #505B75;
+  font-weight: 400; }
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+  margin-bottom: 0.2em;
+  line-height: 1.35; }
+  @media all and (min-width: 28em) {
+    h1 {
+      margin-bottom: 0.5em;
+      margin-top: 1em;
+      font-size: 3em; } }
+
+h3 {
+  font-size: 1.7em;
+  margin-top: 1em; }
 
 p {
   font-weight: 300;
   font-size: 1.1em;
   margin-bottom: 20px;
-  line-height: 1.8; }
+  line-height: 1.8;
+  font-family: 'Open Sans'; }
   @media all and (min-width: 28em) {
     p {
       margin-bottom: 10px; } }
