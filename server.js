@@ -10,7 +10,9 @@ app.get('/', function(req, res) {
 });
 
 // Enable Express to get dependency scripts
-app.use('/', express.static(__dirname + '/'));
+console.log(__dirname);
+app.use(express.static('public'));
+app.use('/img', express.static('img'))
 
 app.listen(port, function(error) {
 	if (!error) {
