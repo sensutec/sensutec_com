@@ -7,13 +7,12 @@ class Home extends React.Component {
     }
     render() {
         return (
-            <div className="content-body">
+            <div className="home-container">
                 <div className="logo">
                     <Logo />
                     <h1 className="logo__name">Sensutec</h1>
                 </div>
                 <p className="logo__text">Bringing organic intelligence to artificial systems.</p>
-                <div className="cables"></div>
             </div>
         )
     }

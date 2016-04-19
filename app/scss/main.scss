@@ -9,6 +9,7 @@
 @import 'cables';
 @import 'footer';
 @import '../components/about-us/about-us';
+@import '../components/home/home';
 
 * {
     box-sizing: border-box;
@@ -25,6 +26,10 @@ body {
     height: 100%;
     position: relative;
     padding-bottom: 4em;
+}
+
+app {
+    height: 100%;
 }
 
 p {
