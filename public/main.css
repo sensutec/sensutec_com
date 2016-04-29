@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Khand:500);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 .content {
   height: 100%; }
 
@@ -9,11 +9,26 @@
   @media all and (min-width: 34em) {
     .content-inner {
       margin: 0 auto;
-      max-width: 35em; } }
+      max-width: 39em; } }
   @media all and (min-width: 40em) {
     .content-inner {
       padding-right: 2em;
       margin-top: 2em; } }
+
+footer {
+  display: none;
+  background-color: #3FBDDB;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  font-size: 0.75em; }
+  @media all and (min-width: 28em) {
+    footer {
+      display: block;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0; } }
 
 .logo {
   display: -webkit-box;
@@ -264,7 +279,8 @@
   letter-spacing: -0.5px;
   text-align: center;
   text-decoration: none;
-  font-size: 0.4em; }
+  font-size: 0.4em;
+  font-weight: 700; }
   @media all and (min-width: 28em) {
     .nav__text {
       margin-bottom: 0.1em;
@@ -275,39 +291,6 @@
   @media all and (min-width: 28em) {
     .nav__svg--wrapper {
       width: 2.5em; } }
-
-.cables {
-  width: 100%;
-  height: 20em;
-  background: url("../img/cables.jpg");
-  background-size: cover;
-  background-position: left center;
-  margin-left: 0; }
-  @media all and (min-width: 28em) {
-    .cables {
-      height: 20em; } }
-  @media all and (min-width: 34em) {
-    .cables {
-      height: 20em; } }
-  @media all and (min-width: 34em) {
-    .cables {
-      height: 25em;
-      margin-left: 3em; } }
-
-footer {
-  display: none;
-  background-color: #3FBDDB;
-  color: #fff;
-  padding: 1em;
-  text-align: center;
-  font-size: 0.75em; }
-  @media all and (min-width: 28em) {
-    footer {
-      display: block;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0; } }
 
 .profile {
   display: -webkit-box;
@@ -326,12 +309,11 @@ footer {
   padding: 1em; }
   @media all and (min-width: 34em) {
     .profile {
-      margin: 2em; } }
+      margin: 1em; } }
 
 .profile__pic {
   width: 4em;
   height: 4em;
-  margin-right: 1em;
   border-radius: 50%; }
   @media all and (min-width: 34em) {
     .profile__pic {
@@ -344,7 +326,7 @@ footer {
   background-position: 50% 50%; }
 
 .profile__pic.neel {
-  background-color: #3FBDDB;
+  background: url("../img/neel_d.png");
   background-size: cover;
   background-position: 50% 50%; }
 
@@ -374,12 +356,13 @@ footer {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  padding-top: 1.5em; }
 
 .profile__name {
   margin-top: 0;
   line-height: 1;
-  font-size: 1em; }
+  font-size: 1.3em; }
   @media all and (min-width: 28em) {
     .profile__name {
       font-size: 1.75em; } }
@@ -387,8 +370,7 @@ footer {
 .profile__title {
   color: #a0a9be;
   font-weight: 600;
-  font-size: 0.7em;
-  font-style: italic;
+  font-size: 0.75em;
   display: block; }
   @media all and (min-width: 34em) {
     .profile__title {
@@ -416,11 +398,23 @@ footer {
           align-items: center;
   height: 20em; }
 
+.article h1 {
+  margin-bottom: 0; }
+
+.article h2 {
+  margin-bottom: 20px; }
+
+.article .author {
+  font-size: 14px;
+  margin-bottom: 20px; }
+
+.article .source {
+  font-size: 10px; }
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Open Sans';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -434,11 +428,15 @@ body {
 app {
   height: 100%; }
 
-p {
-  color: #333; }
+p, h1, h2, h3, h4, h5, h6, div, span {
+  color: #505B75; }
+
+p, div, span, a {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #505B75;
+  font-family: "Khand", Helvetica, Arial, sans-serif;
   font-weight: 400; }
 
 h1 {
@@ -457,17 +455,13 @@ h3 {
   margin-top: 1em; }
 
 p {
-  font-weight: 300;
   font-size: 1.1em;
   margin-bottom: 20px;
   line-height: 1.8;
-  font-family: 'Open Sans'; }
+  font-family: "Open Sans", Helvetica, Arial, sans-serif; }
   @media all and (min-width: 28em) {
     p {
-      margin-bottom: 10px; } }
-
-h1, h2, h3 {
-  font-family: 'Khand'; }
+      margin-bottom: 15px; } }
 
 b {
   font-weight: 700;

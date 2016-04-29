@@ -1,17 +1,17 @@
 export default [
     {
-        className: 'jeff',
-        name: 'Jefferson Franklin',
-        title: 'Systems Developer'
-    },
-    {
         className: 'neel',
         name: 'Neel Doppalapudi',
-        title: 'Operations Director'
+        title: 'CEO'
+    },
+    {
+        className: 'jeff',
+        name: 'Jefferson Franklin',
+        title: 'CIO/Lead Data Scientist'
     },
     {
         className: 'matt',
         name: 'Matt McDaniel',
-        title: 'Application Developer'
+        title: ' '
     }
 ]

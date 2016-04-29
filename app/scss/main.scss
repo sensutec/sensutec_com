@@ -1,21 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Khand:500);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 
 @import './variables';
 @import './mixins';
 @import './content';
+@import './footer';
 @import '../components/logo/logo';
 @import '../components/nav/nav';
-@import 'cables';
-@import 'footer';
 @import '../components/about-us/about-us';
 @import '../components/home/home';
+@import '../components/blog/_blog';
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Open Sans';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -32,12 +31,17 @@ app {
     height: 100%;
 }
 
-p {
-    color: #333;
+p, h1, h2, h3, h4, h5, h6, div, span {
+    color: $text;
+}
+
+p, div, span, a {
+    font-family: $body;
+    font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: $dark;
+    font-family: $header;
     font-weight: 400;
 }
 
@@ -60,19 +64,14 @@ h3 {
 }
 
 p {
-    font-weight: 300;
     font-size: 1.1em;
     margin-bottom: 20px;
     line-height: 1.8;
-    font-family: 'Open Sans';
+    font-family: $body;
     
     @include breakpoint($mobile) {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
-}
-
-h1, h2, h3 {
-    font-family: 'Khand';
 }
 
 b {

@@ -8,7 +8,7 @@
     
     @include breakpoint($tablet) {
         margin: 0 auto;
-        max-width: 35em;
+        max-width: 39em;
     }
     
     @include breakpoint($desktop) {

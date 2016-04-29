@@ -10,7 +10,7 @@ class Cortext extends React.Component {
             <div className="content-body">
                 <h1>About Us</h1>
                 <p>
-                    We are a group of passionate individuals, interested in changing the way people look at and use large bodies of text. We are based in San Diego, California and have unique backgrounds ranging from Software Development, to Finance, to Philosophy. We are looking to apply a unique perspective to the way people look at news articles, research publications, and blog posts.
+                    We believe in a future driven by on-demand, usable, relevant information. Today’s data rich environment gives people the resources to make informed decisions, but not the tools. Our diverse backgrounds and unique worldviews allow us to see end users of data as interpreters, not simply an engines of computation. We apply this thinking to our advanced research tools, easy to use interfaces, and detailed data analytics to redefine the way people read, research, and learn.
                 </p>
                     
                     {items.map((item, i) => {

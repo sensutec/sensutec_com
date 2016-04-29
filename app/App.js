@@ -6,6 +6,7 @@ import Home from './components/home/Home.js';
 import Cortext from './components/cortext/Cortext.js';
 import AboutUs from './components/about-us/AboutUs.js';
 import Contact from './components/contact/Contact.js';
+import Blog from './components/blog/Blog.js';
 
 class Container extends React.Component {
     render() {
@@ -30,6 +31,7 @@ class App extends React.Component {
                     <Route path="cortext" component={Cortext}></Route>
                     <Route path="about-us" component={AboutUs}></Route>
                     <Route path="contact-us" component={Contact}></Route>
+                    <Route path="blog" component={Blog}></Route>
                 </Route>
             </Router>
         )
