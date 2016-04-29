@@ -16,7 +16,7 @@ class Container extends React.Component {
                 <div className="content-inner">
                     {this.props.children}
                 </div>
-                <footer>© Copyright 2016 Sensutec, LLC.</footer>
+                <footer>Copyright 2016 Sensutec, LLC.</footer>
             </div>
         )
     }

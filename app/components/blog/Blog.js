@@ -17,10 +17,10 @@ class Blog extends React.Component {
                     Under that premise, AI exists today.
                 </p>
                 <p>
-                    Machine learning, as it’s called, has been shunned by pundits as statistics masquerading as real intelligence. Forward chaining and neural networks are digestible, logical algorithms that share very little with nuanced randomness of the human mind.
+                    Machine learning, as it's called, has been shunned by pundits as statistics masquerading as real intelligence. Forward chaining and neural networks are digestible, logical algorithms that share very little with nuanced randomness of the human mind.
                 </p>
                 <p>
-                    Incremental improvements in machine learning are currently manifesting themselves as driverless cars, Jeopardy! playing supercomputers, and virtual assistants. These innovations are changing the way humans interact with the environment in material ways; though they still don’t represent the general intelligence machines promised by sci-fi authors for almost a century.
+                    Incremental improvements in machine learning are currently manifesting themselves as driverless cars, Jeopardy! playing supercomputers, and virtual assistants. These innovations are changing the way humans interact with the environment in material ways; though they still don't represent the general intelligence machines promised by sci-fi authors for almost a century.
                 </p>
                 <p>
                     Those super-machines are fundamentally different. They take inspiration from the brain, more specifically, from human consciousness. They are meant to be unpredictable. They evolve and learn, create and imply.
@@ -38,7 +38,7 @@ class Blog extends React.Component {
                     My rationale is as follows:
                 </p>
                 <p>
-                    Whether it be “general” or “narrow” AI, constraints are central to function. Narrow intelligence; the kind found in “Watson”, has very specific constraints. It can only pull from predefined libraries that correlate directly to a limited goal. It is task oriented, and can improve its model by studying feedback on a linear optimization function or a probability matrix.
+                    Whether it be "general" or "narrow" AI, constraints are central to function. Narrow intelligence; the kind found in "Watson", has very specific constraints. It can only pull from predefined libraries that correlate directly to a limited goal. It is task oriented, and can improve its model by studying feedback on a linear optimization function or a probability matrix.
                 </p>
                 <p>
                     General intelligence, on the other hand, attempts to encapsulate as much of the universe into its model as possible. Instead of being task oriented, this machine is reinforcement oriented: it can apply itself to any task with equal success given a digestible input function. Constraints in this machine are meant to give the program freedom to explore. Evolution is encouraged, and as such there is limited control over how and why the program iterates over a dataset.
