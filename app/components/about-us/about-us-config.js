@@ -9,9 +9,4 @@ export default [
         name: 'Jefferson Franklin',
         title: 'CIO/Lead Data Scientist'
     },
-    {
-        className: 'matt',
-        name: 'Matt McDaniel',
-        title: ' '
-    }
 ]
